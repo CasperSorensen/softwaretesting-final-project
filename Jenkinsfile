@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            step([$class: 'MSTestPublisher', testResultsFile:"../**/unit_tests.xml", failOnError: true, keepLongStdio: true])
+            step([$class: 'MSTestPublisher', testResultsFile:"**/unit_tests.xml", failOnError: true, keepLongStdio: true])
         }
     }
 }
