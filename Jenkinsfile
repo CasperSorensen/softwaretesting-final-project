@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'dotnet --version'
-                sh 'cd softwaretesting-final-project/app'
+                sh 'cd app'
                 sh 'dotnet test --logger "trx;LogFileName=unit_tests.xml"'
             }
         }
