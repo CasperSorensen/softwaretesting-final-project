@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:latest
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0
 COPY . /softwaretesting-final-project
 WORKDIR /softwaretesting-final-project/app
 RUN dotnet restore
