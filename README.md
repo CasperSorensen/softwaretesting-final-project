@@ -87,6 +87,6 @@ Copy the initial password you get for the next step.
    1. Give it a display name
    2. Add a branch source: Select GitHub
    3. Create credentials and enter your Github user and password. Then, select the newly created credentials in the Dropdown.
-   4. Enter the Repository HTTPS URL, e. g.: `https://github.com/kea-sd19i-softwaretesting/project-template.git` and validate
+   4. Enter the Repository HTTPS URL, e. g.: `https://github.com/kea-sd19i-softwaretesting/softwaretesting-final-project.git` and validate
    5. Keep all other settings at its default values and press *Save*
 4. 
