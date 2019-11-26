@@ -1,9 +1,9 @@
 version: "3.2"
 services:
   jenkins:
-    image: 4oh4/jenkins-docker
+    image: jenkinsci/blueocean
     ports:
       - "8080:8080"
       - "50000:50000"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
+    #volumes:
+    #   - "/var/run/docker.sock:/var/run/docker.sock"
