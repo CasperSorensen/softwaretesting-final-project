@@ -1,23 +1,7 @@
-# Project Template
+# Softwaretesting Final Project
 
 ![software testing @ kea](https://img.shields.io/badge/software%20testing-kea-%23ea5045)
 ![docker](https://img.shields.io/badge/docker-yes-blue)
-
-This is a template repository for the software testing final project repositories. Whenever we need a C# application, this repository can be used as a base to get everything up and running.
-
-## [Template] How to create a new project with this setup
-
-```
-dotnet new sln
-mkdir app && cd app/
-dotnet new mvc
-cd ..
-mkdir tests && cd tests/
-dotnet new nunit
-cd ..
-dotnet sln add app
-dotnet sln add tests
-```
 
 ## Installation
 
