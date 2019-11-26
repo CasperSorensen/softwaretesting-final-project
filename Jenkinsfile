@@ -15,6 +15,7 @@ pipeline {
                 sh 'dotnet --version'
                 sh 'cd app'
                 sh 'dotnet test --logger "trx;LogFileName=unit_tests.xml"'
+                sh 'cd ..'
             }
         }
     }
