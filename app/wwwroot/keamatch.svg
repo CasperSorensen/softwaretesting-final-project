@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1520.6263"
+   height="382.42767"
+   viewBox="0 0 402.3324 101.18398"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="keamatch.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="851.46579"
+     inkscape:cy="53.642401"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="3840"
+     inkscape:window-height="2024"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="24"
+     fit-margin-left="24"
+     fit-margin-bottom="24"
+     fit-margin-right="24" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.0756442,-193.26914)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:67.80010986px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.69500256"
+       x="95.585068"
+       y="270.57126"
+       id="text4555"><tspan
+         sodipodi:role="line"
+         x="95.585068"
+         y="270.57126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Alata;-inkscape-font-specification:Alata;stroke-width:1.69500256"
+         id="tspan815">keaMatch</tspan></text>
+    <path
+       id="path817"
+       d="m 70.50399,239.93046 c -1.130608,-1.47527 -2.458018,-2.75284 -3.736172,-4.03116 -3.19543,-2.94944 -6.882437,-5.06349 -9.979541,-8.16045 -7.17738,-7.17755 -8.652187,-19.02505 -4.178603,-28.11971 -4.473584,1.12967 -8.603044,3.68706 -12.044272,6.48914 -12.486684,10.22527 -17.40272,28.26706 -11.503492,43.75258 0.196579,0.49238 0.393343,0.98289 0.393343,1.62205 0,1.08137 -0.73745,2.06483 -1.72053,2.45817 -1.081556,0.49051 -2.261364,0.19694 -3.146248,-0.59085 -0.295055,-0.24526 -0.491634,-0.49238 -0.73745,-0.83612 -5.407632,-7.03001 -6.292516,-17.10775 -2.605489,-25.1701 -8.062283,6.68573 -12.43754,17.99274 -11.749292,28.66041 0.196579,2.45797 0.491634,4.91596 1.327374,7.37412 0.688211,2.94961 1.966402,5.89923 3.539536,8.50455 5.112651,8.50474 14.108981,14.60072 23.793543,15.82963 10.323647,1.32663 21.384708,-0.59086 29.299501,-7.86558 8.848841,-8.16062 12.044253,-21.23722 7.374034,-32.44575 l -0.639161,-1.27832 c -0.983266,-2.2614 -2.310546,-4.27698 -3.932823,-6.14505 l 0.245816,-0.0557 M 55.2644,270.89336 c -1.376425,1.17983 -3.5887,2.45797 -5.309305,2.9496 -5.407631,1.96636 -10.815261,-0.78594 -14.109,-4.03117 5.850083,-1.37679 9.291292,-5.70265 10.274503,-10.07792 0.835739,-3.93269 -0.688213,-7.17736 -1.327373,-10.96271 -0.589922,-3.63782 -0.491633,-6.73497 0.884792,-10.12698 0.835739,1.86806 1.819005,3.7363 2.949613,5.21102 3.736171,4.91596 9.586235,7.07907 10.815244,13.7648 0.196579,0.68747 0.295054,1.37679 0.295054,2.11387 0.146784,4.03117 -1.573189,8.45568 -4.522747,11.15949 z"
+       inkscape:connector-curvature="0"
+       style="fill:#ff7f2a;stroke-width:4.9160223" />
+  </g>
+</svg>

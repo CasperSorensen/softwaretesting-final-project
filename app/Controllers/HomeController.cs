@@ -23,7 +23,7 @@ namespace app.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Match()
         {
             return View();
         }
