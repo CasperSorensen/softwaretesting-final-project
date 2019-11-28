@@ -23,11 +23,11 @@ namespace app.Controllers
             return View();
         }
 
-        public IActionResult MatchPage(UserModel MatchUser)
+        public IActionResult MatchPage(UserModel model)
         {
-            Console.WriteLine(MatchUser.Name);
+            var sd = model.Name;
             
-            return View("MatchPage.cshtml", MatchUser);
+            return View();
         }
 
 
