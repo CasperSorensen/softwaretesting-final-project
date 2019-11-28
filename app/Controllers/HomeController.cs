@@ -25,9 +25,9 @@ namespace app.Controllers
 
         public IActionResult MatchPage(UserModel MatchUser)
         {
-
+            Console.WriteLine(MatchUser.Name);
             
-            return View();
+            return View("MatchPage.cshtml", MatchUser);
         }
 
 
