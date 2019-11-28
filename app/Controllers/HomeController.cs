@@ -23,6 +23,15 @@ namespace app.Controllers
             return View();
         }
 
+        public IActionResult MatchPage(UserModel MatchUser)
+        {
+
+            
+            return View();
+        }
+
+
+
         public IActionResult Privacy()
         {
             return View();
