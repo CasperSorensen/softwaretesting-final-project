@@ -40,7 +40,13 @@ ViewData["Title"] = "Home Page";
                 <div class="select">
                     <select name="ZodiacSign">
                         <option disabled selected>Select zodiac sign</option>
-                        <option>Scorpio</option>
+                        @foreach(ZodiacSign sign in Enum.GetValues(typeof(ZodiacSign)))
+                        {
+<option>
+    @sign.ToString()
+</option>
+                        }
+                        
                     </select>
                 </div>
             </div>
