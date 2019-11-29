@@ -1,0 +1,30 @@
+﻿@model List<UserModel>
+@{
+ViewData["Title"] = "Find Users Page";
+}
+<div class="container is-fluid" id="content">            
+ <div class="container">
+    <h2 class="title has-text-centered" data-config-id="header">Our Users</h2>
+    <div class="columns is-multiline">
+    @foreach (var user in Model)
+    {
+      <div class="column is-6-tablet is-3-desktop">
+        <div class="card" style="height: 100%">
+           <div class="card-content">
+            <p class="title is-bold">@user.Name</p>
+            <p>Born in   : @user.DateOfBirth.Day/@user.DateOfBirth.Month - @user.DateOfBirth.Year</p>
+            <p>Hobby     : @user.Hobby </p>
+            <p>Height    : @user.Height cm </p>
+            <p>Star Sign : @user.Zodiac </p>
+            <p>Gender    : @user.Gender </p>  
+          </div>
+        </div>
+      </div>    
+    }
+    </div>
+    <div class="buttons is-centered"><a class="button is-primary" href="#" data-config-id="primary-action">Back to Main Page</a></div>
+  </div>
+</div>
+
+
+

@@ -36,6 +36,14 @@ namespace app.Controllers
         {
             return View();
         }
+        
+        public IActionResult FindUsersPage()
+        {
+            List<UserModel> DummieList = new UserDummies().GetUserDummies();
+            return View(DummieList);
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

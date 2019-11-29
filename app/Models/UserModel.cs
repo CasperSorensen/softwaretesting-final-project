@@ -18,11 +18,16 @@ namespace app.Models
         Pisces,
 
     }
+    public enum Gender{
+        Male,
+        Female,
+        Other
+    }
 
     public class UserModel
     {
         public string Name { get; set; }
-        public bool Gender { get; set; }
+        public Gender Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public int Height { get; set; }
         public string Hobby { get; set; }
