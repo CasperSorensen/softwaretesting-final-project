@@ -5,6 +5,17 @@ ViewData["Title"] = "Home Page";
 }
 
 <div class="container">
-    MATCH:
+    MATCH: 
+    @{ 
+        List<UserModel> ResultsUsers = new AlgorithmsClass().DefaultAlgorythm(Model);
+
+        foreach (var user in ResultsUsers)
+        {
+            <p>@user.Name</p>
+        }
+    }
+
+    
+
    
 </div>

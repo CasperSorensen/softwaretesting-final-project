@@ -25,9 +25,9 @@ namespace app.Controllers
 
         public IActionResult MatchPage(UserModel model)
         {
-            var sd = model.Name;
             
-            return View();
+            
+            return View(model);
         }
 
 
