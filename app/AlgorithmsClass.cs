@@ -12,16 +12,16 @@ namespace app
         public List<UserModel> HighPotentialMatches = new List<UserModel>();
 
 
-        public List<UserModel> DefaultAlgorythm(UserModel UserToMatch)
+        public List<UserModel> DefaultAlgorithm(UserModel UserToMatch)
         {
             List<UserModel> AllUsers = new UserDummies().GetUserDummies();
 
-            int UserYear = int.Parse(UserToMatch.DateOfBirth.ToString("yyyy"));
-            var UserZodiacSign = UserToMatch.Zodiac.ToString();
+            int UserYear = UserToMatch.DateOfBirth.Year;
+            var UserZodiacSign = UserToMatch.Zodiac;
 
             foreach (var User in AllUsers)
             {
-                var compareYear = int.Parse(User.DateOfBirth.ToString("yyyy"));
+                var compareYear = User.DateOfBirth.Year;
 
                 if (UserYear == compareYear)
                 {
@@ -30,7 +30,7 @@ namespace app
 
                     foreach (var NarrowedDownUser in PotentialMatches)
                     {
-                        var CompareSign = NarrowedDownUser.Zodiac.ToString();
+                        var CompareSign = NarrowedDownUser.Zodiac;
                         if (UserZodiacSign == CompareSign)
                         {
                             HighPotentialMatches.Add(NarrowedDownUser);
