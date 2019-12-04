@@ -2,72 +2,42 @@
 
 @{
 ViewData["Title"] = "Home Page";
+     var ResultsUsers = new AlgorithmsClass().DefaultAlgorithm(Model).OrderByDescending(x=>x.Value);
 }
 
-<div class="container">
-    @{ 
-        List<UserModel> ResultsUsers = new AlgorithmsClass().DefaultAlgorithm(Model);
+    <div class="container">
 
-        foreach (var user in ResultsUsers)
-        {
-            <p>@user.Name</p>
-        }
-    }
+        <table class="table">
 
-    
-    <table class="table">
-    
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th></th>
-                <th>Percentage</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-        
-        <tr>
-            <td>1.</td>
-            <td>Laura</td>
-            <td><progress class="progress is-success" value="97" max="100">97%</progress></td>
-            <td>97%</td>
-        </tr>
-        
-        <tr>
-            <td>2.</td>
-            <td>Catherine</td>
-            <td><progress class="progress is-success" value="91" max="100">91%</progress></td>
-            <td>91%</td>
-        </tr>
-        
-        <tr>
-            <td>3.</td>
-            <td>Frida</td>
-            <td><progress class="progress is-success" value="88" max="100">88%</progress></td>
-            <td>88%</td>
-        </tr>
-        
-        <tr>
-            <td>4.</td>
-            <td>Joanne</td>
-            <td><progress class="progress is-warning" value="84" max="100">84%</progress></td>
-            <td>84%</td>
-        </tr>
-        
-        <tr>
-            <td>5.</td>
-            <td>Lisbeth</td>
-            <td><progress class="progress is-danger" value="41" max="100">41%</progress></td>
-            <td>41%</td>
-        </tr>
-        
-        
-        </tbody>
-        
-    </table>
-    
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th></th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
 
-   
-</div>
+            <tbody>
+
+
+                @{
+                    var i = 1;
+                    foreach (var user in ResultsUsers)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td>@user.Key.Name</td>
+                            <td><progress class="progress is-success" value="97" max="100">@user.Value%</progress></td>
+                            <td>@user.Value%</td>
+                        </tr>
+                        i++;
+                    }
+                }
+
+
+
+            </tbody>
+        </table>
+
+    </div>
