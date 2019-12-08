@@ -1,29 +1,35 @@
 using NUnit.Framework;
+using app;
+using app.Models;
 
 namespace tests
 {
   [TestFixture]
   public class Tests
   {
+
+    private UserDummies _testlist;
+
     [SetUp]
     public void Setup()
     {
+      this._testlist = new UserDummies();
     }
 
-    [Test]
-    public void Test1()
-    {
-      Assert.Pass();
-    }
+    #region AddNewUserTests
 
-    public class MyTests
+    [Test, TestCaseSource(typeof(Dataprovider), "UserTestList")]
+    public bool AddNewUserTest_Height(UserModel testuser)
     {
-      [Test, TestCaseSource(typeof(Dataprovider), "HeightTestCases")]
-      public int DivideTest(int n, int d)
+      if (this._testlist.AddNewUser(testuser))
+        return true;
+      else
       {
-        return n / d;
+        return false;
       }
     }
+
+    #endregion
 
   }
 }
