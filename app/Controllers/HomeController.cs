@@ -36,6 +36,16 @@ namespace app.Controllers
         {
             return View();
         }
+
+        public IActionResult Contact(string name)
+        {
+            return View("Contact", name);
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
         
         public IActionResult FindUsersPage()
         {

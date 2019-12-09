@@ -1,0 +1,65 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Contact us";
+}
+
+@if (Model != null && Model != "")
+{
+    
+
+    <div class="container">
+    
+    
+        <article class="message is-success">
+            <div class="message-header">
+                <p>Thanks for your feedback</p>
+            </div>
+            <div class="message-body">
+                Your message has been send to our customer service and will be answered in 2-5 business days.
+            </div>
+        </article>
+    
+        <br/>
+    
+    </div>
+    
+    
+}
+
+<div class="container">
+    <h1 class="title">@ViewData["Title"]</h1>
+    
+    <form name="Contact" method="post" action="/Home/Contact">
+        
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Hans Hansen" name="name" required="">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" type="email" placeholder="hans.hansen@danmail.dk" name="email" required="">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label class="label">Comment</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Dear keaMatch..." name="comment" required=""></textarea>
+            </div>
+        </div>
+        
+        
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Send</button>
+            </div>
+        </div>
+        
+    </form>
+    
+</div>
