@@ -16,7 +16,7 @@ namespace app.Models
       {
         Name = "Birgitte",
         Gender = Gender.Other,
-        DateOfBirth = new DateTime(1992, 4, 24),
+        Age = 27,
         Height = 180,
         Hobby = "trains,pets",
         Algorithm = true,
@@ -26,7 +26,7 @@ namespace app.Models
       {
         Name = "Charlotte",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1992, 3, 8),
+        Age = 27,
         Height = 180,
         Hobby = "architecture,tenis",
         Algorithm = true,
@@ -36,7 +36,7 @@ namespace app.Models
       {
         Name = "Freja",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1992, 12, 29),
+        Age = 27,
         Height = 180,
         Hobby = "programming,gaming",
         Algorithm = true,
@@ -46,7 +46,7 @@ namespace app.Models
       {
         Name = "Sarah",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1992, 7, 11),
+        Age = 27,
         Height = 160,
         Hobby = "pets,programing",
         Algorithm = true,
@@ -56,7 +56,7 @@ namespace app.Models
       {
         Name = "Signe",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1992, 11, 7),
+        Age = 27,
         Height = 162,
         Hobby = "gaming,tenis",
         Algorithm = true,
@@ -67,7 +67,7 @@ namespace app.Models
       {
         Name = "Laurits",
         Gender = Gender.Male,
-        DateOfBirth = new DateTime(1988, 7, 12),
+        Age = 31,
         Height = 186,
         Hobby = "pets,programing",
         Algorithm = true,
@@ -77,7 +77,7 @@ namespace app.Models
       {
         Name = "Hjalte",
         Gender = Gender.Male,
-        DateOfBirth = new DateTime(1990, 10, 2),
+        Age = 29,
         Height = 179,
         Hobby = "programming,pets",
         Algorithm = true,
@@ -87,7 +87,7 @@ namespace app.Models
       {
         Name = "Jens",
         Gender = Gender.Male,
-        DateOfBirth = new DateTime(1990, 11, 19),
+        Age = 29,
         Height = 182,
         Hobby = "gaming",
         Algorithm = true,
@@ -97,7 +97,7 @@ namespace app.Models
       {
         Name = "Jesper",
         Gender = Gender.Male,
-        DateOfBirth = new DateTime(1991, 7, 19),
+        Age = 28,
         Height = 180,
         Hobby = "pets",
         Algorithm = true,
@@ -107,7 +107,7 @@ namespace app.Models
       {
         Name = "Tom",
         Gender = Gender.Other,
-        DateOfBirth = new DateTime(1998, 7, 17),
+        Age = 21,
         Height = 179,
         Hobby = "tennis",
         Algorithm = true,

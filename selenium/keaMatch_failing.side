@@ -63,11 +63,11 @@
       "id": "78cabc1f-dfbe-4b23-b679-8da7e27165e8",
       "comment": "",
       "command": "click",
-      "target": "name=DateOfBirth",
+      "target": "name=Age",
       "targets": [
-        ["name=DateOfBirth", "name"],
+        ["name=Age", "name"],
         ["css=.field:nth-child(3) .input", "css:finder"],
-        ["xpath=//input[@name='DateOfBirth']", "xpath:attributes"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
         ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
@@ -76,15 +76,15 @@
       "id": "0cdaf11b-51a2-403f-8b07-4a465cb38bf9",
       "comment": "",
       "command": "type",
-      "target": "name=DateOfBirth",
+      "target": "name=Age",
       "targets": [
-        ["name=DateOfBirth", "name"],
+        ["name=Age", "name"],
         ["css=.field:nth-child(3) .input", "css:finder"],
-        ["xpath=//input[@name='DateOfBirth']", "xpath:attributes"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
         ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
-      "value": "1992-08-23"
+      "value": "24"
     }, {
       "id": "9f1075f3-a366-4acb-8771-77cfb11773b2",
       "comment": "",
@@ -400,11 +400,11 @@
       "id": "fd3e1595-26d0-42e7-8a3c-3dc502ff35f9",
       "comment": "",
       "command": "click",
-      "target": "name=DateOfBirth",
+      "target": "name=Age",
       "targets": [
-        ["name=DateOfBirth", "name"],
+        ["name=Age", "name"],
         ["css=.field:nth-child(3) .input", "css:finder"],
-        ["xpath=//input[@name='DateOfBirth']", "xpath:attributes"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
         ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
@@ -413,11 +413,11 @@
       "id": "e8172dff-c09b-42ae-b15f-20775a7c49a7",
       "comment": "",
       "command": "type",
-      "target": "name=DateOfBirth",
+      "target": "name=Age",
       "targets": [
-        ["name=DateOfBirth", "name"],
+        ["name=Age", "name"],
         ["css=.field:nth-child(3) .input", "css:finder"],
-        ["xpath=//input[@name='DateOfBirth']", "xpath:attributes"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
         ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/div/input", "xpath:position"]
       ],
