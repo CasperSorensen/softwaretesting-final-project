@@ -21,12 +21,7 @@ namespace tests
     [Test, TestCaseSource(typeof(Dataprovider), "UserTestList")]
     public bool AddNewUserTest_Height(UserModel testuser)
     {
-      if (this._testlist.AddNewUser(testuser))
-        return true;
-      else
-      {
-        return false;
-      }
+      Assert.Equals(testuser.Height, 300);
     }
 
     #endregion
