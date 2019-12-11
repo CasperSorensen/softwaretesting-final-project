@@ -17,7 +17,7 @@ namespace app.Models
         Name = "Birgitte",
         Gender = Gender.Other,
         DateOfBirth = new DateTime(1992, 4, 24),
-        Height = 179,
+        Height = 180,
         Hobby = "trains,pets",
         Algorithm = true,
         Zodiac = ZodiacSign.Taurus
@@ -27,7 +27,7 @@ namespace app.Models
         Name = "Charlotte",
         Gender = Gender.Female,
         DateOfBirth = new DateTime(1992, 3, 8),
-        Height = 159,
+        Height = 180,
         Hobby = "architecture,tenis",
         Algorithm = true,
         Zodiac = ZodiacSign.Pisces
@@ -37,7 +37,7 @@ namespace app.Models
         Name = "Freja",
         Gender = Gender.Female,
         DateOfBirth = new DateTime(1992, 12, 29),
-        Height = 179,
+        Height = 180,
         Hobby = "programming,gaming",
         Algorithm = true,
         Zodiac = ZodiacSign.Capricorn
