@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace app.Models
 {
@@ -127,33 +128,30 @@ namespace app.Models
       return userDummies;
     }
 
-    public bool AddNewUser(UserModel newuser)
+    public double CalculateAvgUserHeight()
     {
-      switch (newuser.Height)
+      var ud = new UserDummies();
+      var list = ud.GetUserDummies();
+      return list
+      .Select(x => x.Height)
+      .Average();
+    }
+
+    public bool AddNewUser(UserModel um)
+    {
+      var ud = new UserDummies();
+
+      if (um.Height > 301 || um.Height < 50)
       {
-        case 301:
-          return false;
-        case 300:
-          userDummies.Add(newuser);
-          return true;
-        case 299:
-          userDummies.Add(newuser);
-          return true;
-        case 51:
-          userDummies.Add(newuser);
-          return true;
-        case 50:
-          userDummies.Add(newuser);
-          return true;
-        case 49:
-          return false;
-        case 0:
-          return false;
-        case -10:
-          return false;
-        default:
-          return false;
+        return false;
       }
+      else
+      {
+        ud.userDummies
+             .Add(um);
+        return true;
+      }
+
     }
 
   }
