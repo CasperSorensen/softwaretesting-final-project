@@ -13,17 +13,6 @@ namespace tests
 
     #region Properties
 
-    // Valid Users
-    public static UserModel Userheight300 = new UserModel() { Height = 300 };
-    public static UserModel Userheight299 = new UserModel() { Height = 299 };
-    public static UserModel Userheight51 = new UserModel() { Height = 51 };
-    public static UserModel Userheight50 = new UserModel() { Height = 50 };
-
-    // Invalid Users
-    public static UserModel Userheight301 = new UserModel() { Height = 301 };
-    public static UserModel Userheight49 = new UserModel() { Height = 49 };
-    public static UserModel Userheight0 = new UserModel() { Height = 0 };
-    public static UserModel UserheightMinus10 = new UserModel() { Height = -10 };
 
     public Tuple<UserModel, int> test = new Tuple<UserModel, int>(Userheight0, 0);
     
@@ -31,18 +20,52 @@ namespace tests
 
     #region UserTestList
 
-    public static IEnumerable<TestCaseData> UserTestList
+    public static IEnumerable<TestCaseData> HeightTestList
     {
       get
       {
-        yield return new TestCaseData(Userheight300).Returns(true);
-        yield return new TestCaseData(Userheight299).Returns(true);
-        yield return new TestCaseData(Userheight51).Returns(true);
-        yield return new TestCaseData(Userheight50).Returns(true);
-        yield return new TestCaseData(Userheight301).Returns(false);
-        yield return new TestCaseData(Userheight49).Returns(false);
-        yield return new TestCaseData(Userheight0).Returns(false);
-        yield return new TestCaseData(UserheightMinus10).Returns(false);
+        // the avg height is 174.5
+        yield return new TestCaseData(-10);
+        yield return new TestCaseData(0);
+        yield return new TestCaseData(174);
+        yield return new TestCaseData(175);
+
+      }
+    }
+
+    public static IEnumerable<TestCaseData> NewUserHeightListPass
+    {
+      get
+      {
+        UserModel testuser1 = new UserModel() { Height = 300 };
+        UserModel testuser2 = new UserModel() { Height = 299 };
+        UserModel testuser3 = new UserModel() { Height = 200 };
+        UserModel testuser4 = new UserModel() { Height = 51 };
+        UserModel testuser5 = new UserModel() { Height = 50 };
+
+        yield return new TestCaseData(testuser1);
+        yield return new TestCaseData(testuser2);
+        yield return new TestCaseData(testuser3);
+        yield return new TestCaseData(testuser4);
+        yield return new TestCaseData(testuser5);
+
+      }
+    }
+
+    public static IEnumerable<TestCaseData> NewUserHeightListFail
+    {
+      get
+      {
+        UserModel testuser1 = new UserModel() { Height = 301 };
+        UserModel testuser2 = new UserModel() { Height = 49 };
+        UserModel testuser3 = new UserModel() { Height = 0 };
+        UserModel testuser4 = new UserModel() { Height = -10 };
+
+        yield return new TestCaseData(testuser1);
+        yield return new TestCaseData(testuser2);
+        yield return new TestCaseData(testuser3);
+        yield return new TestCaseData(testuser4);
+
       }
     }
 
