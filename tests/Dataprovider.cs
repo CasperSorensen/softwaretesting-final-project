@@ -57,12 +57,12 @@ namespace tests
         UserModel testuser1 = new UserModel() { Height = 301 };
         UserModel testuser2 = new UserModel() { Height = 49 };
         UserModel testuser3 = new UserModel() { Height = 0 };
-        //UserModel testuser4 = new UserModel() { Height = -10 };
+        UserModel testuser4 = new UserModel() { Height = -10 };
 
         yield return new TestCaseData(testuser1);
         yield return new TestCaseData(testuser2);
         yield return new TestCaseData(testuser3);
-        //yield return new TestCaseData(testuser4);
+        yield return new TestCaseData(testuser4);
 
       }
     }

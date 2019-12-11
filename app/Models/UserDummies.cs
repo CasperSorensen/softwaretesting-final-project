@@ -141,7 +141,7 @@ namespace app.Models
     {
       var ud = new UserDummies();
 
-      if (um.Height > 301 || um.Height < 50)
+      if (um.Height > 300 || um.Height < 50)
       {
         return false;
       }
