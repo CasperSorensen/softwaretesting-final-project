@@ -25,6 +25,8 @@ namespace tests
     public static UserModel Userheight0 = new UserModel() { Height = 0 };
     public static UserModel UserheightMinus10 = new UserModel() { Height = -10 };
 
+    public Tuple<UserModel, int> test = new Tuple<UserModel, int>(Userheight0, 0);
+    
     #endregion
 
     #region UserTestList

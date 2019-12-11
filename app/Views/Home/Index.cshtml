@@ -3,7 +3,7 @@ ViewData["Title"] = "Home Page";
 }
 
 <div class="container">
-    <form name="UserModel" method="POST" action="/Home/MatchPage">
+    <form name="UserModel" method="POST" action="/Home/MatchPage" id="UserModel">
         <div class="field">
             <label class="label">Name</label>
             <div class="control">
@@ -79,7 +79,7 @@ ViewData["Title"] = "Home Page";
 
         <div class="field is-grouped">
             <div class="control">
-                <button class="button is-link">Match me!</button>
+                <button class="button is-link" id="match-me" disabled="">Match me!</button>
             </div>
         </div>
 
