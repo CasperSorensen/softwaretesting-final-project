@@ -17,7 +17,7 @@ namespace app.Models
         Gender = Gender.Other,
         DateOfBirth = new DateTime(1992, 4, 24),
         Height = 179,
-        Hobby = "Trains",
+        Hobby = "trains,pets",
         Algorithm = true,
         Zodiac = ZodiacSign.Taurus
       };
@@ -25,9 +25,9 @@ namespace app.Models
       {
         Name = "Charlotte",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1995, 3, 8),
+        DateOfBirth = new DateTime(1992, 3, 8),
         Height = 159,
-        Hobby = "Architecture",
+        Hobby = "architecture,tenis",
         Algorithm = true,
         Zodiac = ZodiacSign.Pisces
       };
@@ -35,9 +35,9 @@ namespace app.Models
       {
         Name = "Freja",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1996, 12, 29),
+        DateOfBirth = new DateTime(1992, 12, 29),
         Height = 179,
-        Hobby = "Programming",
+        Hobby = "programming,gaming",
         Algorithm = true,
         Zodiac = ZodiacSign.Capricorn
       };
@@ -45,9 +45,9 @@ namespace app.Models
       {
         Name = "Sarah",
         Gender = Gender.Female,
-        DateOfBirth = new DateTime(1989, 7, 11),
+        DateOfBirth = new DateTime(1992, 7, 11),
         Height = 160,
-        Hobby = "Pets",
+        Hobby = "pets,programing",
         Algorithm = true,
         Zodiac = ZodiacSign.Cancer
       };
@@ -57,7 +57,7 @@ namespace app.Models
         Gender = Gender.Female,
         DateOfBirth = new DateTime(1992, 11, 7),
         Height = 162,
-        Hobby = "Gaming",
+        Hobby = "gaming,tenis",
         Algorithm = true,
         Zodiac = ZodiacSign.Scorpio
       };
@@ -68,7 +68,7 @@ namespace app.Models
         Gender = Gender.Male,
         DateOfBirth = new DateTime(1988, 7, 12),
         Height = 186,
-        Hobby = "Pets",
+        Hobby = "pets,programing",
         Algorithm = true,
         Zodiac = ZodiacSign.Cancer
       };
@@ -78,7 +78,7 @@ namespace app.Models
         Gender = Gender.Male,
         DateOfBirth = new DateTime(1990, 10, 2),
         Height = 179,
-        Hobby = "Programming",
+        Hobby = "programming,pets",
         Algorithm = true,
         Zodiac = ZodiacSign.Virgo
       };
@@ -88,7 +88,7 @@ namespace app.Models
         Gender = Gender.Male,
         DateOfBirth = new DateTime(1990, 11, 19),
         Height = 182,
-        Hobby = "Gaming",
+        Hobby = "gaming",
         Algorithm = true,
         Zodiac = ZodiacSign.Scorpio
       };
@@ -98,7 +98,7 @@ namespace app.Models
         Gender = Gender.Male,
         DateOfBirth = new DateTime(1991, 7, 19),
         Height = 180,
-        Hobby = "Pets",
+        Hobby = "pets",
         Algorithm = true,
         Zodiac = ZodiacSign.Cancer
       };
@@ -108,7 +108,7 @@ namespace app.Models
         Gender = Gender.Other,
         DateOfBirth = new DateTime(1998, 7, 17),
         Height = 179,
-        Hobby = "Tennis",
+        Hobby = "tennis",
         Algorithm = true,
         Zodiac = ZodiacSign.Cancer
       };
