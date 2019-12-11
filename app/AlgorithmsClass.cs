@@ -8,54 +8,82 @@ namespace app
 {
     public class AlgorithmsClass
     {
-        public List<UserModel> PotentialMatches = new List<UserModel>();
-        public List<UserModel> HighPotentialMatches = new List<UserModel>();
-        public Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
+        
 
 
-        public Dictionary<UserModel, int> DefaultAlgorithm(UserModel UserToMatch)
+        public Dictionary<UserModel, int> DefaultAlgorithm(UserModel MatchSeeker)
         {
-            List<UserModel> AllUsers = new UserDummies().GetUserDummies();
+             List<UserModel> PotentialMatches = new List<UserModel>();
+              Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
+             List<UserModel> AllUsers = new UserDummies().GetUserDummies();
 
-            int UserYear = UserToMatch.DateOfBirth.Year;
-            var UserZodiacSign = UserToMatch.Zodiac;
+            int MatchSeekerYear = MatchSeeker.DateOfBirth.Year;
+            
 
-            foreach (var User in AllUsers)
+            foreach (var RegisteredUser in AllUsers)
             {
-                var compareYear = User.DateOfBirth.Year;
+                var UserYear = RegisteredUser.DateOfBirth.Year;
 
-                if (UserYear == compareYear)
+                if (MatchSeekerYear == UserYear)
                 {
-                    result.Add(User, 50);
-                    PotentialMatches.Add(User);
-
-
-                    foreach (var NarrowedDownUser in PotentialMatches)
-                    {
-                        var CompareSign = NarrowedDownUser.Zodiac;
-                        if (UserZodiacSign == CompareSign)
-                        {
-                            if (result.ContainsKey(NarrowedDownUser))
-                            {
-                                result.Remove(NarrowedDownUser);
-                                
-                            }
-                            result.Add(NarrowedDownUser, 80);
-                            HighPotentialMatches.Add(NarrowedDownUser);
-                        }
-                    }
-
+                    result.Add(RegisteredUser, 50);
+                    PotentialMatches.Add(RegisteredUser);                
                 }
                 else
                 {
-                    result.Add(User, 20);
+                    result.Add(RegisteredUser, 0);
                 }
                
             }
+            foreach (var NarrowedDownUser in PotentialMatches)
+            {
+                var MatchSeekerHobbies = MatchSeeker.Hobby.Split(",");
+                var Userhobbies = NarrowedDownUser.Hobby.Split(',');
+                bool haveSharedHobbies = MatchSeekerHobbies.Intersect(Userhobbies).Count() > 0;
+                if (haveSharedHobbies)
+                {
+                    
+                        result.Remove(NarrowedDownUser);
+                        result.Add(NarrowedDownUser, 100);
                      
+                   
+                }               
+            }
+            return result;
+        }
+
+        public Dictionary<UserModel, int> AdvancedAlgorithm(UserModel MatchSeeker)
+        {
+            Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
+            List<UserModel> SameGenderMatches = new List<UserModel>();
+            List<UserModel> SameHeightMatches = new List<UserModel>();
+            List<UserModel> SameSignMatches = new List<UserModel>();
+
+            List<UserModel> AllUsers = new UserDummies().GetUserDummies();
+
+            foreach (var RegisteredUser in AllUsers)
+            {
+                if (RegisteredUser.Gender==MatchSeeker.Gender)
+                {
+                    SameGenderMatches.Add(RegisteredUser);
+                }
+                if(RegisteredUser.Height==MatchSeeker.Height)
+                {
+                    SameHeightMatches.Add(RegisteredUser);
+                }
+                if (RegisteredUser.Zodiac == MatchSeeker.Zodiac)
+                {
+                    SameSignMatches.Add(RegisteredUser);
+                }
+                else
+                {
+                    result.Add(RegisteredUser, 0);
+                }
+            }
+            
             return result;
         }
 
 
-    }
+        }
 }
