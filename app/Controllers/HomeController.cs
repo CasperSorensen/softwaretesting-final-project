@@ -25,9 +25,17 @@ namespace app.Controllers
 
         public IActionResult MatchPage(UserModel model)
         {
-            
-            
-            return View(model);
+            Dictionary<UserModel, int> ResultUsers = new Dictionary<UserModel, int>();
+            if (model.Algorithm)
+            {
+                ResultUsers = new AlgorithmsClass().AdvancedAlgorithm(model);
+               
+            }
+            else
+            {
+                ResultUsers = new AlgorithmsClass().DefaultAlgorithm(model);
+            }
+            return View(ResultUsers);
         }
 
 

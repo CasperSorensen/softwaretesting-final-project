@@ -1,8 +1,7 @@
-﻿@model UserModel
+﻿@model Dictionary<UserModel,int>
 
 @{
 ViewData["Title"] = "Home Page";
-     var ResultsUsers = new AlgorithmsClass().DefaultAlgorithm(Model).OrderByDescending(x=>x.Value);
 }
 
     <div class="container">
@@ -23,7 +22,7 @@ ViewData["Title"] = "Home Page";
 
                 @{
                     var i = 1;
-                    foreach (var user in ResultsUsers)
+                    foreach (var user in Model.OrderByDescending(x => x.Value))
                     {
                         <tr>
                             <td>@i</td>

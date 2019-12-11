@@ -7,9 +7,7 @@ using app.Models;
 namespace app
 {
     public class AlgorithmsClass
-    {
-        
-
+    {      
 
         public Dictionary<UserModel, int> DefaultAlgorithm(UserModel MatchSeeker)
         {
@@ -80,6 +78,28 @@ namespace app
                     result.Add(RegisteredUser, 0);
                 }
             }
+            foreach (var match in SameGenderMatches)
+            {
+                bool isInHeightMatches = SameHeightMatches.Contains(match);
+                bool isInzodiacMatches = SameSignMatches.Contains(match);
+                if (isInHeightMatches&&isInzodiacMatches)
+                {
+                    result.Add(match, 100);
+                }
+                else if (isInHeightMatches || isInzodiacMatches)
+                {
+                    if (result.ContainsKey(match))
+                    {
+                        result[match] = 60;
+
+                    }
+                    else
+                    {
+                        result.Add(match, 60);
+                    }
+                }
+            }
+
             
             return result;
         }
