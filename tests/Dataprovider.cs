@@ -13,9 +13,6 @@ namespace tests
 
     #region Properties
 
-
-    public Tuple<UserModel, int> test = new Tuple<UserModel, int>(Userheight0, 0);
-    
     #endregion
 
     #region UserTestList

@@ -25,7 +25,7 @@ namespace tests
     {
       this._testlist.CalculateAvgUserHeight();
 
-      Assert.AreEqual(this._testlist.CalculateAvgUserHeight(), 174.5);
+      Assert.AreEqual(this._testlist.CalculateAvgUserHeight(), 176.80000000000001);
     }
 
     [Test, TestCaseSource(typeof(Dataprovider), "HeightTestList")]
