@@ -16,14 +16,14 @@ namespace app
               Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
              List<UserModel> AllUsers = new UserDummies().GetUserDummies();
 
-            int MatchSeekerYear = MatchSeeker.DateOfBirth.Year;
+            int MatchSeekerAge = MatchSeeker.Age;
             
 
             foreach (var RegisteredUser in AllUsers)
             {
-                var UserYear = RegisteredUser.DateOfBirth.Year;
+                var UserYear = RegisteredUser.Age;
 
-                if (MatchSeekerYear == UserYear)
+                if (MatchSeekerAge == UserYear)
                 {
                     result.Add(RegisteredUser, 50);
                     PotentialMatches.Add(RegisteredUser);                
