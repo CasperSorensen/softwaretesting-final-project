@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using app.Models;
 
@@ -35,23 +36,41 @@ namespace app
             }
             foreach (var NarrowedDownUser in PotentialMatches)
             {
-                var MatchSeekerHobbies = MatchSeeker.Hobby.Split(",");
-                var Userhobbies = NarrowedDownUser.Hobby.Split(',');
-                bool haveSharedHobbies = MatchSeekerHobbies.Intersect(Userhobbies).Count() > 0;
-                if (haveSharedHobbies)
+                if (MatchSeeker.Hobby == null)
                 {
-                    
+                    result.Remove(NarrowedDownUser);
+                    result.Add(NarrowedDownUser, 50);
+                }
+                else
+                {
+
+                    var MatchSeekerHobbies = MatchSeeker.Hobby.Split(",");
+                    var Userhobbies = NarrowedDownUser.Hobby.Split(',');
+                    bool haveSharedHobbies = MatchSeekerHobbies.Intersect(Userhobbies).Count() > 0;
+                    if (haveSharedHobbies)
+                    {
+
                         result.Remove(NarrowedDownUser);
                         result.Add(NarrowedDownUser, 100);
-                     
-                   
-                }               
+
+
+                    }
+                }
             }
             return result;
         }
 
         public Dictionary<UserModel, int> AdvancedAlgorithm(UserModel MatchSeeker)
         {
+
+           
+            var regex = "^[a-zA-Z]+$";
+            var passed = Regex.Match(MatchSeeker.Name, regex);
+            
+            var sd = "";
+
+
+
             Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
             List<UserModel> SameGenderMatches = new List<UserModel>();
             List<UserModel> SameHeightMatches = new List<UserModel>();
@@ -90,12 +109,12 @@ namespace app
                 {
                     if (result.ContainsKey(match))
                     {
-                        result[match] = 60;
+                        result[match] = 50;
 
                     }
                     else
                     {
-                        result.Add(match, 60);
+                        result.Add(match, 50);
                     }
                 }
             }

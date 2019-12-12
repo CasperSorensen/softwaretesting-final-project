@@ -27,7 +27,7 @@ ViewData["Title"] = "Home Page";
                         <tr>
                             <td>@i</td>
                             <td>@user.Key.Name</td>
-                            <td><progress class="progress is-success" value="97" max="100">@user.Value%</progress></td>
+                            <td><progress class="progress is-success" value="@user.Value" max="100">@user.Value%</progress></td>
                             <td>@user.Value%</td>
                         </tr>
                         i++;

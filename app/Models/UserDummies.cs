@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace app.Models
 {
@@ -132,9 +133,7 @@ namespace app.Models
     {
       var ud = new UserDummies();
       var list = ud.GetUserDummies();
-      return list
-      .Select(x => x.Height)
-      .Average();
+      return list.Select(x => x.Height).Average();
     }
 
     public bool AddNewUser(UserModel um)
@@ -147,7 +146,9 @@ namespace app.Models
       }
       else
       {
-        ud.userDummies
+                
+
+                ud.userDummies
              .Add(um);
         return true;
       }
