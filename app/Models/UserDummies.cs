@@ -136,7 +136,7 @@ namespace app.Models
       return list.Select(x => x.Height).Average();
     }
 
-    public bool AddNewUser(UserModel um)
+    public bool AddNewUserOnHeight(UserModel um)
     {
       var ud = new UserDummies();
 
@@ -146,10 +146,25 @@ namespace app.Models
       }
       else
       {
-                
+        ud.userDummies
+     .Add(um);
+        return true;
+      }
 
-                ud.userDummies
-             .Add(um);
+    }
+
+    public bool AddNewUserOnAge(UserModel um)
+    {
+      var ud = new UserDummies();
+
+      if (um.Age > 120 || um.Age < 18)
+      {
+        return false;
+      }
+      else
+      {
+        ud.userDummies
+     .Add(um);
         return true;
       }
 

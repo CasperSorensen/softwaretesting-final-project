@@ -37,35 +37,61 @@ namespace tests
 
     #endregion
 
-    #region AddNewUserTest
+    #region AddNewUserTests
+
+    #region Height Tests
 
     [Test, TestCaseSource(typeof(Dataprovider), "NewUserHeightListPass")]
     public void AddNewUserHeight_Pass(UserModel newuser)
     {
-      if (this._testlist.AddNewUser(newuser))
+      var res = this._testlist.AddNewUserOnHeight(newuser);
+      if (res == true)
       {
         Assert.Pass();
       }
+      Assert.Fail();
     }
 
     [Test, TestCaseSource(typeof(Dataprovider), "NewUserHeightListFail")]
     public void AddNewUserHeight_Fail(UserModel newuser)
     {
-      if (this._testlist.AddNewUser(newuser))
+      var res = this._testlist.AddNewUserOnHeight(newuser);
+
+      if (res == false)
       {
-        Assert.Fail();
+        Assert.Pass();
       }
     }
 
     #endregion
 
-    #region DateOnNewUser
+    #region Age Tests
 
+    [Test, TestCaseSource(typeof(Dataprovider), "NewUserAgeListPass")]
+    public void AddNewUserAge_Pass(UserModel newuser)
+    {
+      var user_added = this._testlist.AddNewUserOnAge(newuser);
+      if (user_added == true)
+      {
+        Assert.Pass();
+      }
+      Assert.Fail();
+    }
 
+    [Test, TestCaseSource(typeof(Dataprovider), "NewUserAgeListFail")]
+    public void AddNewUserAge_Fail(UserModel newuser)
+    {
+      var user_added = this._testlist.AddNewUserOnAge(newuser);
+      if (user_added == false)
+      {
+        Assert.Pass();
+      }
+      Assert.Fail();
+    }
 
     #endregion
 
-
+    #endregion
 
   }
 }
