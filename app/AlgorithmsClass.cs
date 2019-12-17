@@ -12,8 +12,11 @@ namespace app
 
         public Dictionary<UserModel, int> DefaultAlgorithm(UserModel MatchSeeker)
         {
+             //Potential Matches will be used in second Part of algorithm
+             //result list servers as return object for frontend-storing the user and percentage of "How good of a match they are for one another"- we wil call this number Match Index
+             //User Dummies are all curently registered user in our app
              List<UserModel> PotentialMatches = new List<UserModel>();
-              Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
+             Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
              List<UserModel> AllUsers = new UserDummies().GetUserDummies();
 
             int MatchSeekerAge = MatchSeeker.Age;
@@ -23,9 +26,13 @@ namespace app
             {
                 var UserYear = RegisteredUser.Age;
 
+                //if they are same age
                 if (MatchSeekerAge == UserYear)
                 {
+                    //add user with 50% Match Index
                     result.Add(RegisteredUser, 50);
+
+                    //add user to list for futher evaluation
                     PotentialMatches.Add(RegisteredUser);                
                 }
                 else
@@ -36,25 +43,22 @@ namespace app
             }
             foreach (var NarrowedDownUser in PotentialMatches)
             {
-                if (MatchSeeker.Hobby == null)
+                if (MatchSeeker.Hobby!=null)
                 {
-                    result.Remove(NarrowedDownUser);
-                    result.Add(NarrowedDownUser, 50);
-                }
-                else
-                {
-
                     var MatchSeekerHobbies = MatchSeeker.Hobby.Split(",");
                     var Userhobbies = NarrowedDownUser.Hobby.Split(',');
                     bool haveSharedHobbies = MatchSeekerHobbies.Intersect(Userhobbies).Count() > 0;
                     if (haveSharedHobbies)
                     {
-
                         result.Remove(NarrowedDownUser);
                         result.Add(NarrowedDownUser, 100);
 
-
                     }
+                }
+                else
+                {
+
+                  
                 }
             }
             return result;
@@ -62,14 +66,6 @@ namespace app
 
         public Dictionary<UserModel, int> AdvancedAlgorithm(UserModel MatchSeeker)
         {
-
-           
-            var regex = "^[a-zA-Z]+$";
-            var passed = Regex.Match(MatchSeeker.Name, regex);
-            
-            var sd = "";
-
-
 
             Dictionary<UserModel, int> result = new Dictionary<UserModel, int>();
             List<UserModel> SameGenderMatches = new List<UserModel>();
@@ -84,11 +80,11 @@ namespace app
                 {
                     SameGenderMatches.Add(RegisteredUser);
                 }
-                if(RegisteredUser.Height==MatchSeeker.Height)
+                else if(RegisteredUser.Height==MatchSeeker.Height)
                 {
                     SameHeightMatches.Add(RegisteredUser);
                 }
-                if (RegisteredUser.Zodiac == MatchSeeker.Zodiac)
+                else if (RegisteredUser.Zodiac == MatchSeeker.Zodiac)
                 {
                     SameSignMatches.Add(RegisteredUser);
                 }
@@ -118,8 +114,7 @@ namespace app
                     }
                 }
             }
-
-            
+          
             return result;
         }
 
