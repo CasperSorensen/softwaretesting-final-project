@@ -1,0 +1,146 @@
+Started by user casper
+Obtained Jenkinsfile from git https://github.com/kea-sd19i-softwaretesting/softwaretesting-final-project.git
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] getContext
+[Pipeline] node
+Running on Jenkins in /var/jenkins_home/workspace/KeaMatch_Pipeline
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+using credential Github
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kea-sd19i-softwaretesting/softwaretesting-final-project.git # timeout=10
+Fetching upstream changes from https://github.com/kea-sd19i-softwaretesting/softwaretesting-final-project.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/kea-sd19i-softwaretesting/softwaretesting-final-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision aaa90f606da7bce65fd84edf30d7bed1ee5a85f8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f aaa90f606da7bce65fd84edf30d7bed1ee5a85f8 # timeout=10
+Commit message: "hot fix"
+ > git rev-list --no-walk e4a69ddadb6dbabc1be0684700162eca97e618ca # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Agent Setup)
+[Pipeline] isUnix
+[Pipeline] readFile
+[Pipeline] sh
++ docker build -t cb0f096d81f9decbafe41c59955806b235211046 -f Dockerfile .
+Sending build context to Docker daemon  74.94MB
+
+Step 1/6 : FROM mcr.microsoft.com/dotnet/core/sdk:3.0
+ ---> a345b68a725e
+Step 2/6 : COPY . /softwaretesting-final-project
+ ---> b2674917f98e
+Step 3/6 : WORKDIR /softwaretesting-final-project/app
+ ---> Running in c8005901eae2
+Removing intermediate container c8005901eae2
+ ---> fc97e304c51e
+Step 4/6 : RUN dotnet restore
+ ---> Running in b6267ef0cc49
+  Restore completed in 10.4 sec for /softwaretesting-final-project/app/app.csproj.
+Removing intermediate container b6267ef0cc49
+ ---> cc2c30322c81
+Step 5/6 : EXPOSE 5000/tcp
+ ---> Running in 8ffcb7985a76
+Removing intermediate container 8ffcb7985a76
+ ---> 9ed4c28537b0
+Step 6/6 : ENTRYPOINT [ "dotnet", "run", "--no-restore", "--urls", "http://0.0.0.0:5000"]
+ ---> Running in 471c7b83ec9a
+Removing intermediate container 471c7b83ec9a
+ ---> 5da02496a22e
+Successfully built 5da02496a22e
+Successfully tagged cb0f096d81f9decbafe41c59955806b235211046:latest
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] isUnix
+[Pipeline] sh
++ docker inspect -f . cb0f096d81f9decbafe41c59955806b235211046
+.
+[Pipeline] withDockerContainer
+Jenkins seems to be running inside container be8f9bf4912fb1f5768379afb12ed7558e88804fa99bcd0a7455778df24caa74
+$ docker run -t -d -u 0:0 --entrypoint= -w /var/jenkins_home/workspace/KeaMatch_Pipeline --volumes-from be8f9bf4912fb1f5768379afb12ed7558e88804fa99bcd0a7455778df24caa74 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** cb0f096d81f9decbafe41c59955806b235211046 cat
+$ docker top 33dc6204f0b611331296fb108f47acab7d51c2f822e73b018ffbf6baeb2cb591 -eo pid,comm
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] sh
++ dotnet --version
+3.0.101
+[Pipeline] sh
++ cd app
+[Pipeline] sh
++ dotnet test --logger trx;LogFileName=unit_tests.xml
+
+Welcome to .NET Core 3.0!
+---------------------
+SDK Version: 3.0.101
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+Test run for /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/TestResults/unit_tests.xml
+Results File: /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/TestResults/unit_tests.xml
+
+Test Run Successful.
+Total tests: 23
+     Passed: 23
+ Total time: 0.8139 Seconds
+[Pipeline] sh
++ cd ..
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] mstest
+[MSTEST-PLUGIN] INFO processing test results in file(s) **/unit_tests.xml
+[MSTEST-PLUGIN] INFO processing report file: /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/TestResults/unit_tests.xml
+[MSTEST-PLUGIN] WARNING Unable to delete the file /var/jenkins_home/workspace/KeaMatch_Pipeline/temporary-junit-reports
+[MSTEST-PLUGIN] INFO This file is a reserved temporary file. You can delete it safely.
+[MSTEST-PLUGIN] INFO XML coverage report file not found: /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/TestResults/vstest.coveragexml
+
+[MSTEST-PLUGIN] INFO XML coverage report file not found: /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/TestResults/unit_tests.coveragexml
+
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+$ docker stop --time=1 33dc6204f0b611331296fb108f47acab7d51c2f822e73b018ffbf6baeb2cb591
+$ docker rm -f 33dc6204f0b611331296fb108f47acab7d51c2f822e73b018ffbf6baeb2cb591
+[Pipeline] // withDockerContainer
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+

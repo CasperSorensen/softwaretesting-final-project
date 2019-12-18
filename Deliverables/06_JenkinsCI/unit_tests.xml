@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="db6d69fc-4977-4b32-8e3a-a98cc5ff7ba0" name="@33dc6204f0b6 2019-12-18 08:53:51" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2019-12-18T08:53:51.8983389+00:00" queuing="2019-12-18T08:53:51.8983390+00:00" start="2019-12-18T08:53:51.1107056+00:00" finish="2019-12-18T08:53:51.9373851+00:00" />
+  <TestSettings name="default" id="081b9d67-c3a6-4819-aecf-ec5a983d348e">
+    <Deployment runDeploymentRoot="_33dc6204f0b6_2019-12-18_08_53_51" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="df2cffdb-aa97-4523-b8e2-36c8ef22d7eb" testId="a556b941-d74a-0d60-c385-f11047da869a" testName="AddNewUserHeight_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002110" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df2cffdb-aa97-4523-b8e2-36c8ef22d7eb" />
+    <UnitTestResult executionId="8d90fd8f-bfbe-44f6-acde-0be7ac6969a3" testId="85191376-80dd-c9f7-d054-de3184c11833" testName="AddNewUserAge_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002120" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d90fd8f-bfbe-44f6-acde-0be7ac6969a3" />
+    <UnitTestResult executionId="19aeda9b-13b6-48d2-8dda-bb6efbf2809b" testId="004a5169-f49f-8f15-c485-9244fe56406f" testName="AddNewUserAge_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002200" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19aeda9b-13b6-48d2-8dda-bb6efbf2809b" />
+    <UnitTestResult executionId="e0669bd4-97c4-49bb-bc83-009bc536e0c9" testId="a556b941-d74a-0d60-c385-f11047da869a" testName="AddNewUserHeight_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002260" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0669bd4-97c4-49bb-bc83-009bc536e0c9" />
+    <UnitTestResult executionId="367f1796-4c4c-498e-bb50-221cc680abb9" testId="004a5169-f49f-8f15-c485-9244fe56406f" testName="AddNewUserAge_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002160" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="367f1796-4c4c-498e-bb50-221cc680abb9" />
+    <UnitTestResult executionId="5e76cf94-31c3-4461-ba29-86f311443272" testId="4e6fce03-236f-099c-f3a9-4f611e8a2c0a" testName="CalcAvgUserHeight_Fail(0)" computerName="33dc6204f0b6" duration="00:00:00.0001350" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e76cf94-31c3-4461-ba29-86f311443272" />
+    <UnitTestResult executionId="5273addc-288c-4e4b-83f6-2f83a0ce26c3" testId="85191376-80dd-c9f7-d054-de3184c11833" testName="AddNewUserAge_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002850" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5273addc-288c-4e4b-83f6-2f83a0ce26c3" />
+    <UnitTestResult executionId="88bcb175-471b-4183-a0a9-c7b892347918" testId="004a5169-f49f-8f15-c485-9244fe56406f" testName="AddNewUserAge_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0003400" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88bcb175-471b-4183-a0a9-c7b892347918" />
+    <UnitTestResult executionId="81dd133b-1ec6-4d09-bc79-c0fceb1cbcc5" testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" testName="AddNewUserHeight_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0040840" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81dd133b-1ec6-4d09-bc79-c0fceb1cbcc5" />
+    <UnitTestResult executionId="1d0667d6-d7e1-418d-9dd5-54ba5808d1af" testId="a556b941-d74a-0d60-c385-f11047da869a" testName="AddNewUserHeight_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0001979" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d0667d6-d7e1-418d-9dd5-54ba5808d1af" />
+    <UnitTestResult executionId="6fd1d755-eb1e-4600-8f3f-9d3870e2749c" testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" testName="AddNewUserHeight_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002560" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fd1d755-eb1e-4600-8f3f-9d3870e2749c" />
+    <UnitTestResult executionId="7aa03af4-90df-4490-862e-60b0b87c780d" testId="004a5169-f49f-8f15-c485-9244fe56406f" testName="AddNewUserAge_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0001900" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7aa03af4-90df-4490-862e-60b0b87c780d" />
+    <UnitTestResult executionId="fff76494-46c4-4411-8653-948ac57cb314" testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" testName="AddNewUserHeight_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002300" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fff76494-46c4-4411-8653-948ac57cb314" />
+    <UnitTestResult executionId="7515e67a-8b1c-44bb-9fbb-89268c06bb1a" testId="004a5169-f49f-8f15-c485-9244fe56406f" testName="AddNewUserAge_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0001970" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7515e67a-8b1c-44bb-9fbb-89268c06bb1a" />
+    <UnitTestResult executionId="7c8ff120-4f36-48df-9dc8-223c44c9d8c8" testId="a556b941-d74a-0d60-c385-f11047da869a" testName="AddNewUserHeight_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0005160" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c8ff120-4f36-48df-9dc8-223c44c9d8c8" />
+    <UnitTestResult executionId="539736b0-ee65-4f01-a245-dc986827a28a" testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" testName="AddNewUserHeight_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0002540" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="539736b0-ee65-4f01-a245-dc986827a28a" />
+    <UnitTestResult executionId="824d9592-fd7c-42e4-b748-e26d01cf9a18" testId="7b819859-4cce-c8d0-ed8c-d2dca9a84849" testName="CalcAvgUserHeight_Fail(-10)" computerName="33dc6204f0b6" duration="00:00:00.0127800" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="824d9592-fd7c-42e4-b748-e26d01cf9a18" />
+    <UnitTestResult executionId="3068cfac-76eb-4b1e-9674-b9f1d30aa381" testId="85191376-80dd-c9f7-d054-de3184c11833" testName="AddNewUserAge_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0004460" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3068cfac-76eb-4b1e-9674-b9f1d30aa381" />
+    <UnitTestResult executionId="7cd0c63b-93cf-4323-91bf-5583dc33f5d0" testId="85191376-80dd-c9f7-d054-de3184c11833" testName="AddNewUserAge_Fail(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0323050" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cd0c63b-93cf-4323-91bf-5583dc33f5d0" />
+    <UnitTestResult executionId="d792a9f4-710f-4acb-aec6-5bebae58af7f" testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" testName="AddNewUserHeight_Pass(app.Models.UserModel)" computerName="33dc6204f0b6" duration="00:00:00.0003310" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d792a9f4-710f-4acb-aec6-5bebae58af7f" />
+    <UnitTestResult executionId="a8a52a5d-9f24-4653-b137-8267c49d921a" testId="8ec2d129-3eb7-ac1e-aae6-60364ff17b7f" testName="CalcAvgUserHeight_Fail(175)" computerName="33dc6204f0b6" duration="00:00:00.0000450" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8a52a5d-9f24-4653-b137-8267c49d921a" />
+    <UnitTestResult executionId="4871f756-323a-4557-b6a6-31f4bc474c80" testId="0f5e651f-c2c0-87d9-66a5-dc803d3f495a" testName="CalcAvgUserHeight_Fail(174)" computerName="33dc6204f0b6" duration="00:00:00.0001510" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4871f756-323a-4557-b6a6-31f4bc474c80" />
+    <UnitTestResult executionId="067d09df-f13d-4ba6-91c0-e4671995f8a2" testId="04f78e05-d313-9b7a-4a62-b49bd14f4605" testName="CalcAvgUserHeight_Pass" computerName="33dc6204f0b6" duration="00:00:00.0002540" startTime="2019-12-18T08:53:51.0000000+00:00" endTime="2019-12-18T08:53:51.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="067d09df-f13d-4ba6-91c0-e4671995f8a2" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AddNewUserHeight_Fail(app.Models.UserModel)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="a556b941-d74a-0d60-c385-f11047da869a">
+      <Execution id="7c8ff120-4f36-48df-9dc8-223c44c9d8c8" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="AddNewUserHeight_Fail(app.Models.UserModel)" />
+    </UnitTest>
+    <UnitTest name="CalcAvgUserHeight_Fail(175)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="8ec2d129-3eb7-ac1e-aae6-60364ff17b7f">
+      <Execution id="a8a52a5d-9f24-4653-b137-8267c49d921a" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="CalcAvgUserHeight_Fail(175)" />
+    </UnitTest>
+    <UnitTest name="CalcAvgUserHeight_Pass" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="04f78e05-d313-9b7a-4a62-b49bd14f4605">
+      <Execution id="067d09df-f13d-4ba6-91c0-e4671995f8a2" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="CalcAvgUserHeight_Pass" />
+    </UnitTest>
+    <UnitTest name="CalcAvgUserHeight_Fail(0)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="4e6fce03-236f-099c-f3a9-4f611e8a2c0a">
+      <Execution id="5e76cf94-31c3-4461-ba29-86f311443272" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="CalcAvgUserHeight_Fail(0)" />
+    </UnitTest>
+    <UnitTest name="CalcAvgUserHeight_Fail(-10)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="7b819859-4cce-c8d0-ed8c-d2dca9a84849">
+      <Execution id="824d9592-fd7c-42e4-b748-e26d01cf9a18" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="CalcAvgUserHeight_Fail(-10)" />
+    </UnitTest>
+    <UnitTest name="CalcAvgUserHeight_Fail(174)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="0f5e651f-c2c0-87d9-66a5-dc803d3f495a">
+      <Execution id="4871f756-323a-4557-b6a6-31f4bc474c80" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="CalcAvgUserHeight_Fail(174)" />
+    </UnitTest>
+    <UnitTest name="AddNewUserHeight_Pass(app.Models.UserModel)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="cdc1743c-1efc-a4a3-7197-b8478402f07c">
+      <Execution id="d792a9f4-710f-4acb-aec6-5bebae58af7f" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="AddNewUserHeight_Pass(app.Models.UserModel)" />
+    </UnitTest>
+    <UnitTest name="AddNewUserAge_Fail(app.Models.UserModel)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="85191376-80dd-c9f7-d054-de3184c11833">
+      <Execution id="7cd0c63b-93cf-4323-91bf-5583dc33f5d0" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="AddNewUserAge_Fail(app.Models.UserModel)" />
+    </UnitTest>
+    <UnitTest name="AddNewUserAge_Pass(app.Models.UserModel)" storage="/var/jenkins_home/workspace/keamatch_pipeline/tests/bin/debug/netcoreapp3.0/tests.dll" id="004a5169-f49f-8f15-c485-9244fe56406f">
+      <Execution id="88bcb175-471b-4183-a0a9-c7b892347918" />
+      <TestMethod codeBase="/var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="tests.Tests" name="AddNewUserAge_Pass(app.Models.UserModel)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a556b941-d74a-0d60-c385-f11047da869a" executionId="df2cffdb-aa97-4523-b8e2-36c8ef22d7eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85191376-80dd-c9f7-d054-de3184c11833" executionId="8d90fd8f-bfbe-44f6-acde-0be7ac6969a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="004a5169-f49f-8f15-c485-9244fe56406f" executionId="19aeda9b-13b6-48d2-8dda-bb6efbf2809b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a556b941-d74a-0d60-c385-f11047da869a" executionId="e0669bd4-97c4-49bb-bc83-009bc536e0c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="004a5169-f49f-8f15-c485-9244fe56406f" executionId="367f1796-4c4c-498e-bb50-221cc680abb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e6fce03-236f-099c-f3a9-4f611e8a2c0a" executionId="5e76cf94-31c3-4461-ba29-86f311443272" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85191376-80dd-c9f7-d054-de3184c11833" executionId="5273addc-288c-4e4b-83f6-2f83a0ce26c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="004a5169-f49f-8f15-c485-9244fe56406f" executionId="88bcb175-471b-4183-a0a9-c7b892347918" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" executionId="81dd133b-1ec6-4d09-bc79-c0fceb1cbcc5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a556b941-d74a-0d60-c385-f11047da869a" executionId="1d0667d6-d7e1-418d-9dd5-54ba5808d1af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" executionId="6fd1d755-eb1e-4600-8f3f-9d3870e2749c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="004a5169-f49f-8f15-c485-9244fe56406f" executionId="7aa03af4-90df-4490-862e-60b0b87c780d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" executionId="fff76494-46c4-4411-8653-948ac57cb314" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="004a5169-f49f-8f15-c485-9244fe56406f" executionId="7515e67a-8b1c-44bb-9fbb-89268c06bb1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a556b941-d74a-0d60-c385-f11047da869a" executionId="7c8ff120-4f36-48df-9dc8-223c44c9d8c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" executionId="539736b0-ee65-4f01-a245-dc986827a28a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b819859-4cce-c8d0-ed8c-d2dca9a84849" executionId="824d9592-fd7c-42e4-b748-e26d01cf9a18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85191376-80dd-c9f7-d054-de3184c11833" executionId="3068cfac-76eb-4b1e-9674-b9f1d30aa381" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85191376-80dd-c9f7-d054-de3184c11833" executionId="7cd0c63b-93cf-4323-91bf-5583dc33f5d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc1743c-1efc-a4a3-7197-b8478402f07c" executionId="d792a9f4-710f-4acb-aec6-5bebae58af7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ec2d129-3eb7-ac1e-aae6-60364ff17b7f" executionId="a8a52a5d-9f24-4653-b137-8267c49d921a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f5e651f-c2c0-87d9-66a5-dc803d3f495a" executionId="4871f756-323a-4557-b6a6-31f4bc474c80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04f78e05-d313-9b7a-4a62-b49bd14f4605" executionId="067d09df-f13d-4ba6-91c0-e4671995f8a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="23" executed="23" passed="23" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.13.0.0: Test execution started
+Running all tests in /var/jenkins_home/workspace/KeaMatch_Pipeline/tests/bin/Debug/netcoreapp3.0/tests.dll
+   NUnit3TestExecutor converted 23 of 23 NUnit test cases
+NUnit Adapter 3.13.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
