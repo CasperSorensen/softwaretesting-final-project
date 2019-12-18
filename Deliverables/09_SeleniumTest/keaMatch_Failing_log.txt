@@ -1,0 +1,21 @@
+Running 'Failing' 11:01:18
+1.open on / OK11:01:18
+2.setWindowSize on 1198x906 OK11:01:18
+3.click on name=Name OK11:01:18
+4.type on name=Name with value Peter Petersen OK11:01:19
+5.click on name=Gender OK11:01:19
+6.click on name=Age OK11:01:19
+7.type on name=Age with value 1984-03-12 OK11:01:20
+8.click on name=Height OK11:01:20
+9.click on name=Zodiac OK11:01:20
+10.select on name=Zodiac with value label=Libra OK11:01:20
+11.click on css=option:nth-child(4) OK11:01:20
+12.click on name=Zodiac OK11:01:21
+13.click on name=Height OK11:01:21
+14.type on name=Height with value 32 OK11:01:21
+15.click on name=Hobby OK11:01:21
+16.type on name=Hobby with value Basketball, Swimming OK11:01:21
+17.click on name=Algorithm OK11:01:22
+18.Trying to find css=.button:not([disabled])... Failed:11:01:22
+Implicit Wait timed out after 30000ms
+'Failing' ended with 1 error(s)
