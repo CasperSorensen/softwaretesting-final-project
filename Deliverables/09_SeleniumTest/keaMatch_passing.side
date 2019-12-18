@@ -1,0 +1,354 @@
+{
+  "id": "0162c965-25e2-49f3-be5f-7a891bf1e6f1",
+  "version": "2.0",
+  "name": "keaMatch",
+  "url": "https://localhost:5001",
+  "tests": [{
+    "id": "df13b9ca-dcb5-4648-8f6b-baeab0938f8e",
+    "name": "Passing",
+    "commands": [{
+      "id": "eb40f68a-f1b8-4e56-89fb-e7638923b467",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c569d58d-4c5e-4790-a86c-7a18cb1a83fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1198x906",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82120b22-e4fb-41a0-a0fc-6ff36928f718",
+      "comment": "",
+      "command": "click",
+      "target": "name=Name",
+      "targets": [
+        ["name=Name", "name"],
+        ["css=.field:nth-child(1) .input", "css:finder"],
+        ["xpath=//input[@name='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "210aacef-f049-4278-979d-015a2f95e0f8",
+      "comment": "",
+      "command": "type",
+      "target": "name=Name",
+      "targets": [
+        ["name=Name", "name"],
+        ["css=.field:nth-child(1) .input", "css:finder"],
+        ["xpath=//input[@name='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hans Hansen"
+    }, {
+      "id": "9ddcb8bc-d402-4f8e-8e8b-baff8abfa8f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=Gender",
+      "targets": [
+        ["name=Gender", "name"],
+        ["css=.radio:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='Gender']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[2]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78cabc1f-dfbe-4b23-b679-8da7e27165e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.field:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cdaf11b-51a2-403f-8b07-4a465cb38bf9",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.field:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "27"
+    }, {
+      "id": "9f1075f3-a366-4acb-8771-77cfb11773b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=Height",
+      "targets": [
+        ["name=Height", "name"],
+        ["css=.field:nth-child(5) .input", "css:finder"],
+        ["xpath=//input[@name='Height']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fffcd60-5df1-4287-9793-fdedb7152267",
+      "comment": "",
+      "command": "click",
+      "target": "name=Zodiac",
+      "targets": [
+        ["name=Zodiac", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='Zodiac']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e220268c-3af2-4b78-a275-03cdba397457",
+      "comment": "",
+      "command": "select",
+      "target": "name=Zodiac",
+      "targets": [],
+      "value": "label=Scorpio"
+    }, {
+      "id": "3fce3589-5ff8-469f-b3a3-a8bf55260cf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(4)",
+      "targets": [
+        ["css=option:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='content']/div/form/div[4]/div/div/select/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Taurus')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e6995c7-08fa-41c4-8818-089556eaeef4",
+      "comment": "",
+      "command": "click",
+      "target": "name=Zodiac",
+      "targets": [
+        ["name=Zodiac", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='Zodiac']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "259773ed-46fc-4286-bfdf-3a213d703ac5",
+      "comment": "",
+      "command": "click",
+      "target": "name=Height",
+      "targets": [
+        ["name=Height", "name"],
+        ["css=.field:nth-child(5) .input", "css:finder"],
+        ["xpath=//input[@name='Height']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7470d651-321f-4f93-9bde-e528dd857918",
+      "comment": "",
+      "command": "type",
+      "target": "name=Height",
+      "targets": [
+        ["name=Height", "name"],
+        ["css=.field:nth-child(5) .input", "css:finder"],
+        ["xpath=//input[@name='Height']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "164"
+    }, {
+      "id": "a86fca29-88ee-4e23-9360-34ede84f7415",
+      "comment": "",
+      "command": "click",
+      "target": "name=Hobby",
+      "targets": [
+        ["name=Hobby", "name"],
+        ["css=.field:nth-child(6) .input", "css:finder"],
+        ["xpath=//input[@name='Hobby']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77578b2c-25d2-44f4-a3cd-9ec018bd7810",
+      "comment": "",
+      "command": "type",
+      "target": "name=Hobby",
+      "targets": [
+        ["name=Hobby", "name"],
+        ["css=.field:nth-child(6) .input", "css:finder"],
+        ["xpath=//input[@name='Hobby']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Basketball, Swimming"
+    }, {
+      "id": "e803e133-7c97-46bb-b39f-ed04ad508f64",
+      "comment": "",
+      "command": "click",
+      "target": "name=Algorithm",
+      "targets": [
+        ["name=Algorithm", "name"],
+        ["css=.checkbox > input", "css:finder"],
+        ["xpath=//input[@name='Algorithm']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[7]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9834f9b-17e2-4dd7-9e17-c5b47a3626c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:not([disabled])",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c7fca70-62f1-4393-b68b-b773190efd6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Our users",
+      "targets": [
+        ["linkText=Our users", "linkText"],
+        ["css=.navbar-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Our users')]", "xpath:link"],
+        ["xpath=//div[@id='navbarBasicExample']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Home/FindUsersPage')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Our users')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f19d4965-77e3-41c1-8ced-8402cd81eac9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Privacy",
+      "targets": [
+        ["linkText=Privacy", "linkText"],
+        ["css=.navbar-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Privacy')]", "xpath:link"],
+        ["xpath=//div[@id='navbarBasicExample']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Home/Privacy')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Privacy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79e0ce3d-3426-4f47-a837-55bbb361e77c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=.navbar-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//div[@id='navbarBasicExample']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Home/About')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c47c676f-eac9-413b-b377-b6c2c32eb83a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=.navbar-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//div[@id='navbarBasicExample']/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Home/Contact')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fe0ba22-17e5-436b-ac6e-02a35f8d6e4e",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.field:nth-child(1) .input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36d353ce-4e89-450c-9af3-94b3da40ade6",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.field:nth-child(1) .input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hans Hansen"
+    }, {
+      "id": "f347a9b1-9ba1-4f3c-8ed0-261f57bbc451",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.field:nth-child(2) .input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "hans.hansen@danmail.dk"
+    }, {
+      "id": "a399dca5-d2d4-4780-b37a-4a79f6c0e756",
+      "comment": "",
+      "command": "type",
+      "target": "name=comment",
+      "targets": [
+        ["name=comment", "name"],
+        ["css=.textarea", "css:finder"],
+        ["xpath=//textarea[@name='comment']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/form/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Dear keaMatch,\\n\\nI really love your application, it works fine for me.\\n\\nKind regards,\\nHans Hansen"
+    }, {
+      "id": "0764a1eb-c983-42d9-bc50-a0a1c70cbb6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//div[@id='content']/div/form/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "782e49c8-14fd-46b2-83c8-75e1afe2b087",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://localhost:5001/"],
+  "plugins": []
+}
